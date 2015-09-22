@@ -1027,6 +1027,7 @@ message V1LayerParameter {
     ABSVAL = 35;
     ACCURACY = 1;
     ARGMAX = 30;
+	BN = 42;
     BNLL = 2;
     CONCAT = 3;
     CONTRASTIVE_LOSS = 37;
@@ -1077,6 +1078,7 @@ message V1LayerParameter {
   repeated float loss_weight = 35;
   optional AccuracyParameter accuracy_param = 27;
   optional ArgMaxParameter argmax_param = 23;
+  optional BNParameter bn_param = 43;
   optional ConcatParameter concat_param = 9;
   optional ContrastiveLossParameter contrastive_loss_param = 40;
   optional ConvolutionParameter convolution_param = 10;
